@@ -8,7 +8,6 @@
 body {
     font-family: 'Space Mono', monospace;
     background-color: #C5E4E7;
-
     /* background-color:  hsl(172, 67%, 45%); */
 }
 .logo {
@@ -142,3 +141,54 @@ input[type="text"] {
     color: #00474B;
     border-radius: 3px;
 }
+.success-border {
+    border: 2px solid green;
+}
+.error-border {
+    border: 2px solid red;
+}
+.block {
+display: block;    
+}
+
+@media screen and (max-width: 768px) {
+    .logo img {
+        width: 30px;
+        /* margin-top: 3px; */
+    }
+    .wrapper {
+        flex-direction: column;
+        width: 100%;
+        position: relative;
+        margin-top: 20px;
+        top: 0;
+        left: 0;
+        transform: translate(0, 0);
+    }
+    .bill {
+        font-size: 10px;
+    }
+    .zero {
+        font-size: 10px;
+    }
+    .part-one {
+        width: 100%;
+        padding: 10px;
+    }
+    .part-two {
+        width: 100%;
+    }
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
