@@ -153,9 +153,10 @@ display: block;
 
 @media screen and (max-width: 768px) {
     .logo img {
-        width: 30px;
-        /* margin-top: 3px; */
+        /* width: 30px; */
+        margin-top: 20px;
     }
+
     .wrapper {
         flex-direction: column;
         width: 100%;
