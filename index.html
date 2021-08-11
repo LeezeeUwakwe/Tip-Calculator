@@ -15,25 +15,30 @@
     <div class="wrapper">
         <div class="part-one">
            <p class="bill">Bill</p>
+
          <div class="input-field">
-             <img  src="./assets/images/icon-dollar.svg" alt="">
-             <input type="text" name="" id="" placeholder="0">
+             <img src="./assets/images/icon-dollar.svg" alt="">
+             <input type="text" class="form-field" placeholder="0">
          </div>
+         <p class="error-msg1">Can't be Zero</p>
          <p class="select">Select Tip %</p>
+         
          <div class="select-tip">
-         <button class="btn btn-five">5%</button>
-         <button class="btn btn-ten">10%</button>
-         <button class="btn btn-fifteen">15%</button>
-         <button class="btn btn-twenty5">25%</button>
-         <button class="btn btn-fifty">50%</button>
-        
-         <button class="btn" id="btn-custom">Custom</button>
+         <button class="btn btn-five" value="5">5%</button>
+         <button class="btn btn-ten" value="10">10%</button>
+         <button class="btn btn-fifteen" value="15">15%</button>
+         <button class="btn btn-twenty5" value="25">25%</button>
+         <button class="btn btn-fifty" value="50">50%</button>
+         <!-- <button class="btn custom-btn" id="btn-custom">Custom</button> -->
+         <input type="text" class="custom-btn" id="btn-custom" placeholder="Custom">
         </div>
         <p class="number">Number of people</p>
-        <div class="input-field">
-            <img  src="./assets/images/icon-person.svg" alt="">
-            <input type="text" name="" id="" placeholder="0">
+        <div class="input-field input-field2">
+            <img src="./assets/images/icon-person.svg" alt="">
+            <input type="text" name="" class="form-field2" id="" placeholder="0">
+
         </div>
+        <p class="error-msg2">Can't be Zero</p>
         </div>
         <div class="part-two">
             <div class="holder"> 
@@ -41,7 +46,6 @@
                     <h1>Tip amount</h1>
                     <p>/Person</p>
                 </div>
-
                 <div class="double-zero">
                     <img src="./assets/images/green.dollar.svg" alt="">
                     <span>0.00</span>
@@ -52,7 +56,6 @@
                     <h1>Tip amount</h1>
                     <p>/Person</p>
                 </div>
-
                 <div class="double-zero">
                     <img src="./assets/images/green.dollar.svg" alt="">
                     <span>0.00</span>
@@ -61,14 +64,6 @@
             <button class=" btn-reset">RESET</button>
         </div>
     </div>
-    
-
-
-
-
-
-
-
     <script src="script.js"></script>
 </body>
 </html>

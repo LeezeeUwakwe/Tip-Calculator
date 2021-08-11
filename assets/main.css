@@ -41,6 +41,13 @@ body {
     font-size: 13px;
     color: #9EBBBD;
 }
+.error-msg1, 
+.error-msg2 {
+    display: none;
+    text-align: right;
+    font-size: 12px;
+    color: #e74c3c;
+}
 
 .part-one {
     width: 40%;
@@ -58,8 +65,7 @@ input[type="text"] {
     width: 150px;
     outline: none;
     background-color: #F3F8FB;
-    text-align: right;
-    
+    text-align: right; 
 }
 ::placeholder {
     color: #9EBBBD;
@@ -104,9 +110,21 @@ input[type="text"] {
     border-radius: 3px;
     font-weight: 600;
 }
-#btn-custom {
-    background-color: #F3F8FB;
-    color:  hsl(186, 14%, 43%);
+ /* input[type="text"],*/
+  #btn-custom {
+     background-color: red;
+    /* background-color: #F3F8FB; */
+    color:  hsl(186, 39%, 45%);
+    width: 30%;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 10px;
+    /* padding: 5px 0; */
+    padding-top: 4px;
+    border-radius: 3px;
+}
+#btn-custom ::placeholder  {
+    font-size: 10px;
 }
 .holder {
     display: flex;
@@ -142,18 +160,18 @@ input[type="text"] {
     border-radius: 3px;
 }
 .success-border {
-    border: 2px solid green;
+    border: 2px solid #2ecc71;
 }
 .error-border {
-    border: 2px solid red;
+    border: 2px solid #e74c3c;
 }
+
 .block {
 display: block;    
 }
 
 @media screen and (max-width: 768px) {
     .logo img {
-        /* width: 30px; */
         margin-top: 20px;
     }
 
@@ -179,15 +197,6 @@ display: block;
     .part-two {
         width: 100%;
     }
-
-
-
-
-
-
-
-
-
 
 }
 
