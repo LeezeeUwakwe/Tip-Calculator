@@ -12,7 +12,7 @@ body {
 }
 .logo {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     justify-content: center;
     align-items: center;
 }
@@ -110,10 +110,10 @@ input[type="text"] {
     border-radius: 3px;
     font-weight: 600;
 }
- /* input[type="text"],*/
+
   #btn-custom {
-     background-color: red;
-    /* background-color: #F3F8FB; */
+     /* background-color: red; */
+    background-color: #F3F8FB;
     color:  hsl(186, 39%, 45%);
     width: 30%;
     margin-top: 15px;
@@ -170,7 +170,7 @@ input[type="text"] {
 display: block;    
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .logo img {
         margin-top: 20px;
     }
