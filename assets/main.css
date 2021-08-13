@@ -15,6 +15,7 @@ body {
     /* flex-direction: column; */
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
 .logo img {
     width: 45px;
@@ -112,20 +113,13 @@ input[type="text"] {
 }
 
   #btn-custom {
-     /* background-color: red; */
     background-color: #F3F8FB;
-    color:  hsl(186, 39%, 45%);
-    width: 30%;
-    margin-top: 15px;
+    color: #00474B;
     text-align: center;
-    font-size: 10px;
-    /* padding: 5px 0; */
-    padding-top: 4px;
-    border-radius: 3px;
-}
-#btn-custom ::placeholder  {
-    font-size: 10px;
-}
+    font-size: 15px;
+  }
+   
+
 .holder {
     display: flex;
     justify-content: space-between;
@@ -167,6 +161,9 @@ input[type="text"] {
 }
 .error-border {
     border: 2px solid #e74c3c;
+}
+.cyan {
+    color: #26C2AD;
 }
 
 .block {
