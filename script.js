@@ -3,10 +3,12 @@ let inputBorder = document.querySelector('.input-field')
 let errorMsg = document.querySelector('.error-msg1')
 let _errorMsg = document.querySelector('.error-msg2')
 let select = document.querySelector('.select-tip')
+let buttons = document.querySelectorAll('.green-bg')
 let _inputField = document.querySelector('.form-field2')
 let _inputBorder = document.querySelector('.input-field2')
+// let button = document.querySelector ('button')
 
-
+console.log(buttons[0]);
 inputField.addEventListener('keyup', e=> {
     e.preventDefault()
     if (inputField.value.length > 0) {
@@ -55,13 +57,27 @@ _inputField.addEventListener('keyup', e=> {
     }
 })
 
-select.addEventListener('click', e=> {
-    let value;
-        if (e.target.classList.contains('custom-btn')) {
-            value = e.target.value;
-        } else if (e.target.classList.contains('btn')) {
-            value = e.target.value;
-        }
-    })
+// select.addEventListener('click', e=> {
+//     let value;
+//         if (e.target.classList.contains('custom-btn')) {
+//             value = e.target.value;
+//         } else if (e.target.classList.contains('btn')) {
+//             value = e.target.value;
+//             e.target.classList.toggle('cyan')
+//         }
+//     })
+
+    buttons.forEach((element,index) => {
+        if(element.classList.contains('cyan')){
+         element.classList.remove('cyan')
+            }
+        element.addEventListener('click',function() {
+        element.classList.toggle('cyan')
+        })  
+
+      });
+
+
+
 
 
