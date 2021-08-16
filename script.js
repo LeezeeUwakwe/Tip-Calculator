@@ -6,6 +6,7 @@ let select = document.querySelector('.select-tip')
 let buttons = document.querySelectorAll('.green-bg')
 let _inputField = document.querySelector('.form-field2')
 let _inputBorder = document.querySelector('.input-field2')
+let custom = document.querySelector('.custom-btn')
 let inputAmount, tipPercent, noOfPeople;
 let wrapper = document.querySelector('.wrapper')
 let pointZero = document.querySelector('.point-zero1')
@@ -74,6 +75,10 @@ _inputField.addEventListener('keyup', e=> {
             _inputBorder.classList.add('error-border')
         } 
     }
+})
+custom.addEventListener('keyup', e=> {
+    
+
 })
  // buttons.forEach((element,index) => {
     //     if(element.classList.contains('cyan')){
