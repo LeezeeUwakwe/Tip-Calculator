@@ -179,6 +179,9 @@ input[type="text"] {
 .block {
 display: block;    
 }
+.btn-reset:hover {
+    background-color: #26C2AD;
+}
 
  @media screen and (max-width: 768px) {
     .logo img {
