@@ -12,7 +12,6 @@ let wrapper = document.querySelector('.wrapper')
 let pointZero = document.querySelector('.point-zero1')
 let _pointZero = document.querySelector('.point-zero2')
 let reset = document.querySelector('.btn-reset')
-
 inputField.addEventListener('keyup', e=> {
     e.preventDefault()
     if (inputField.value.length > 0) {
@@ -77,28 +76,49 @@ _inputField.addEventListener('keyup', e=> {
     }
 })
 custom.addEventListener('keyup', e=> {
-    
-
-})
- // buttons.forEach((element,index) => {
-    //     if(element.classList.contains('cyan')){
-    //      element.classList.remove('cyan')
-    //         }
-    //     element.addEventListener('click',function() {
-    //     element.classList.toggle('cyan')
-    //     })  
-    //   });
-select.addEventListener('click', e=> {
-    let value;
-        if (e.target.classList.contains('custom-btn')) {
+    if (custom.value > 0) {
+        custom.classList.contains('error-border')
+        custom.classList.remove('error-border')
+        custom.classList.add('success-border')
+    } 
+    else {
+        custom.classList.add('error-border')
+    }
+    })
+    // buttons.forEach((element,index) => {
+        //     if(element.classList.contains('cyan')){
+            //      element.classList.remove('cyan')
+            //         }
+            //     element.addEventListener('click',function() {
+                //     element.classList.toggle('cyan')
+                //     })  
+                //   });
+                //  if (custom.classList.contains('error-border')) {
+                //     custom.classList.remove('error-border')
+                //     custom.classList.add('success-border')
+                // } else {
+                //     custom.classList.add('success-border')
+                // }
+    let btnVal, inputVal;
+    select.addEventListener('click', e=> {
+        let value, tipNo;
+        if (e.target.classList.contains('green-bg')) {
             value = e.target.value;
-            
-        } else if (e.target.classList.contains('btn')) {
-            value = e.target.value;
-        let tipNo =  Number(e.target.value);
-        if (tipNo) {
-            tipPercent = tipNo
+            tipNo =  Number(e.target.value);
+            if (tipNo) {
+                btnVal = tipNo
+                console.log(btnVal);
+            }
         }
+    })
+    const cusBtn = document.querySelector('.custom-btn');
+    cusBtn.addEventListener('keyup', (e) => {
+        let tipNo;
+        tipNo =  Number(e.target.value);
+        if (tipNo) {
+            tipNo = tipNo/100;
+            inputVal = tipNo
+            console.log(inputVal);
         }
     })
    
@@ -111,6 +131,8 @@ select.addEventListener('click', e=> {
       });
       wrapper.addEventListener('keyup', e=> {
           e.preventDefault()
+          tipPercent = inputVal || btnVal;
+          console.log(inputAmount , tipPercent , noOfPeople)
         if (inputAmount && tipPercent && noOfPeople) {
             let tipAmount = inputAmount * tipPercent
             let total = tipAmount / noOfPeople
